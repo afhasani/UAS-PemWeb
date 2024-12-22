@@ -68,5 +68,6 @@ Bagian Bonus: Hosting Aplikasi Web (Bobot: 20%)
 
 (5%) Bagaimana Anda memastikan keamanan aplikasi web yang Anda host?
 -> Saya akan memastikan bahwa layanan web yang saya pakai sudah menyediakan layanan SSL dan SSH. Selain itu, di rumahweb, disediakan layanan security 360 (Sistem keamanan dari CloudLinux sebagai proactive defense yang mampu mendeteksi dan mematikan ancaman keamanan seperti malware, virus, dan DDoS). Terakhir, saya akan memastikan bahwa setiap input ke database harus melalui sanitasi dan validasi terlebih dahulu. Sebagai tambahan, saya juga bisa menggunakan password hashing yang lebih kuat seperti bcrypt atau argon2 untuk menyimpan password secara aman dibandingkan dengan md5.
+
 (5%) Jelaskan konfigurasi server yang Anda terapkan untuk mendukung aplikasi web Anda.
 -> Konfigurasi server yang saya terapkan antara lain adalah: 1. Memilih apache sebagai server karena apache cocok untuk aplikasi berbasis PHP dan memiliki banyak modul untuk berbagai kebutuhan. 2. Menggunakan MySQL sebagai database server. 3. Menggunakan fungsi escape_string untuk memastikan tidak ada karakter yang mengganggu query (mengamankan data input dari SQL injection). 4. Melakukan validasi dan sanitasi input sebelum diproses.
